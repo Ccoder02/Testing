@@ -4,6 +4,7 @@
 #include "degree.h"
 #include "roster.h"
 
+
 using std::string;
 using std::cout;
 using std::endl;
@@ -17,14 +18,13 @@ const string studentData[] =
 	 "A4,Erin,Black,Erin.black@comcast.net,22,50,58,40,SECURITY",
 	 "A5,Cora,Worley,cworl30@wgu.edu,37,28,29,30,SOFTWARE" };
 
-const int numStudents = 5;
+const int numStuds = 5;
 
 std::cout << "Scripting & Programming Applications, C867" << std::endl;
 std::cout << "C++" << std::endl;
 std::cout << "Cora Worley - 007444954" << std::endl << std::endl << std::endl << std::endl;
 
 
-//Tips in video 15 about 2:11
 ClassRoster classRoster;
 for (int i = 0; i < numDays; i++) classRoster.parse3(studentData[i]);
 cout << "All students:" << endl;
