@@ -22,32 +22,32 @@ private:
 	DegreeProgram degreeProgram;
 
 public:
-	Student(); //Parameterless constructor
+	Student(); //Empty constructor
 	Student(string studentID, string firstName, string lastName, string emailAddress, int age, double days[], DegreeProgram degreeProgram);
 	~Student();  //Optional. Gets rid of anything created dynamically, which in this case is nothing, but good habit.
 
 
 	//Getters
 	string getID();
-	string getFirst();
-	string getLast();
+	string getFirstName();
+	string getLastName();
 	string getEmailAddress();
-	int getaAge();
+	int getAge();
 	const double* getDays();
 	DegreeProgram getDegreeProgram();
 
 
 	//Setters
 	void setID(string ID);
-	void setFirst(string first);
-	void setLast(string last);
-	void setEmail(string email);
-	void setaAge(int age);
+	void setFirstName(string firstName);
+	void setLastName(string lastName);
+	void setEmailAddress(string emailAddress);
+	void setAge(int age);
 	void setDays(const double days[]);
 	void setDegreeProgram(DegreeProgram degProg);
 
 	static void printHeader();
 
-	void print();
+	void print(); //paricular related
 };
 	
